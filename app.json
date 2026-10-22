@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Reza Farm Manager",
+    "slug": "reza-farm-manager",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon-bull.png",
+    "scheme": "reza",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F7F8F4",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.reza.farmmanager",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.reza.farmmanager",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon-bull.png",
+        "backgroundColor": "#184F30"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon-bull.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-bull.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#184F30"
+        }
+      ],
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to use your photos so you can add pictures of your animals.",
+          "cameraPermission": "Allow $(PRODUCT_NAME) to use your camera so you can take pictures of your animals.",
+          "microphonePermission": false
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+# Everything in .gitignore, plus files EAS Build never needs.
+node_modules/
+.expo/
+dist/
+web-build/
+/ios
+/android
+*.log
+.env
+.env*.local
+
+# Archived Vite/Tailwind web prototype — not part of the native app
+legacy-web/
+.bolt/
